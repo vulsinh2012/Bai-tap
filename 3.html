@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+       var code = parseInt(prompt("Enter a number"))
+       var result
+       switch (code) {
+            case 1:
+                result = "Táo"
+                break;
+            case 2:
+                result = "Dứa"
+                break;    
+            case 3:
+                result = "Xoài"
+                break;   
+            case 4:
+                result = "Dưa hấu"
+                break;   
+            case 5:
+                result = "Thịt lợn"
+                break;   
+            case 6:
+                result = "Thịt gà"
+                break;   
+            case 7:
+                result = "Thịt bò"
+                break;   
+            case 8:
+                result = "Rau bí"
+                break;   
+            case 9:
+                result = "Rau ngót"
+                break;   
+           default:
+                result = "Du lieu khong hop le"
+                break;
+       }
+       document.getElementById("show").innerHTML = result
+    </script>
+</body>
+</html>

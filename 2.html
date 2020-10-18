@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        var number = parseInt(prompt("Enter a"))
+        var devider = parseInt(prompt("Enter b"))
+        if(number !== null && devider !== null){
+            if(number%devider === 0)
+            document.getElementById("show").innerHTML = "a chia het cho b"
+            else
+            document.getElementById("show").innerHTML = "a khong chia het cho b"
+        }
+    </script>
+</body>
+</html>

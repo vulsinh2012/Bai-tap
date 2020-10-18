@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script language="javascript">
+		var n = parseInt(prompt("Nhập số n > 0 bất kì: "));
+		if(n*0 !== 0 || n <= 0) {
+            document.getElementById("show").innerHTML = "Input không hợp lệ"
+		}
+		else {
+			var result = 0;
+			var i = 1;
+			while (i <= n) {				
+				result = result + i/n;
+				i = i+1;
+			}
+            document.getElementById("show").innerHTML = `n = ${n}<br />1/n + 2/n + 3/n + ... + n/n = ${result}`
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+		var n = parseInt(prompt("Nhập số n >= 0 bất kì: "));
+		if(n === 0) {
+            document.getElementById("show").innerHTML = "Tổng các số chia hết cho 3 của số 0 là 0 "
+		}
+		else {
+			var result = 0;
+			var i = 3;
+			while (i <= n) {
+				if ((i % 3) === 0) {
+					result = result + i;
+				}
+				i = i+3;
+			}
+            document.getElementById("show").innerHTML = `Tổng các số chia hết cho 3 trong khoảng từ 0 đến ${n} là: ${result} `
+		}
+	</script>
+</body>
+</html>
